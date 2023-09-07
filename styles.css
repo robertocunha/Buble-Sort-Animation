@@ -1,0 +1,43 @@
+/* Estilo para o contêiner principal com display: grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Ajusta automaticamente as colunas */
+    grid-gap: 20px; /* Espaço entre as colunas */
+    padding: 20px;
+}
+
+
+/* Estilo para a área de animação à direita */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10%;
+    background-color: #f2f2f2;
+    border: solid 1px;
+    /* padding: 4rem; */
+}
+
+/* Estilo para os elementos <div> que serão ordenados */
+.sortable-element {
+    width: 20px;
+    background-color: #3498db;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Estilo para a área de código à esquerda */
+.code-container {
+    background-color: #333;
+    color: #fff;
+    font-family: monospace;
+    padding: 20px;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+/* Estilo para destacar o código em execução (pode ser controlado com JavaScript) */
+.highlight {
+    background-color: yellow;
+    color: #333;
+}
