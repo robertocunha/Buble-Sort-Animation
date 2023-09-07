@@ -7,7 +7,7 @@
     <title>Buble Sort Animation</title>
 </head>
 <body>
-    <h1>Buble Sort Animation</h1>
+    <h1>Bubble Sort Animation</h1>
 
     <div class="grid-container">
         <div class="animation-container">
@@ -15,27 +15,34 @@
             <div class="sortable-element" style="height: 100px;"></div>
             <div class="sortable-element" style="height: 80px;"></div>
             <div class="sortable-element" style="height: 120px;"></div>
-            <!-- Adicione mais elementos <div> conforme necessário -->
         </div>
 
         <div class="code-container">
-            <!-- Código de ordenação à esquerda -->
             <pre>
                 <code>
-    function sort(d) {
-        for(var i = 0; i < d.length; i++) {
-            for(var j = i + 1; j < d.length; j++) {
-                if(d[i] > d[j]) {
-                    const temp = d[i]
-                    d[i] = d[j]
-                    d[j] = temp
-                }
-            }
-        }
-    }
+    <span class="code-line">function sort(d) {</span>
+    <span class="code-line">    for(var i = 0; i < d.length; i++) {</span>
+    <span class="code-line">        for(var j = i + 1; j < d.length; j++) {</span>
+    <span class="code-line">            if(d[i] > d[j]) {</span>
+    <span class="code-line">                const temp = d[i]</span>
+    <span class="code-line">                d[i] = d[j]</span>
+    <span class="code-line">                d[j] = temp</span>
+    <span class="code-line">            }</span>
+    <span class="code-line">        }</span>
+    <span class="code-line">    }</span>
+    <span class="code-line">}</span>
                 </code>
             </pre>
         </div>
     </div>
+
+    <div class="controls">
+        <button id="stepBackwardButton">Passo Atrás</button>
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <button id="stepForwardButton">Passo à Frente</button>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
