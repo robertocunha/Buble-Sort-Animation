@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Buble Sort Animation</title>
+    <title>Bubble Sort Animation</title>
 </head>
 <body>
     <h1>Bubble Sort Animation</h1>
 
     <div class="grid-container">
         <div class="animation-container">
-            <!-- Elementos <div> que serão ordenados -->
             <div class="sortable-element" style="height: 100px;"></div>
             <div class="sortable-element" style="height: 80px;"></div>
             <div class="sortable-element" style="height: 120px;"></div>
@@ -20,13 +19,13 @@
         <div class="code-container">
             <pre>
                 <code>
-    <span class="code-line">function sort(d) {</span>
-    <span class="code-line">    for(var i = 0; i < d.length; i++) {</span>
-    <span class="code-line">        for(var j = i + 1; j < d.length; j++) {</span>
-    <span class="code-line">            if(d[i] > d[j]) {</span>
-    <span class="code-line">                const temp = d[i]</span>
-    <span class="code-line">                d[i] = d[j]</span>
-    <span class="code-line">                d[j] = temp</span>
+    <span class="code-line">function sort(bars) {</span>
+    <span class="code-line">    for(let i = 0; i < bars.length; i++) {</span>
+    <span class="code-line">        for(let j = i + 1; j < bars.length; j++) {</span>
+    <span class="code-line">            if(bars[i] > bars[j]) {</span>
+    <span class="code-line">                const temp = bars[i]</span>
+    <span class="code-line">                bars[i] = bars[j]</span>
+    <span class="code-line">                bars[j] = temp</span>
     <span class="code-line">            }</span>
     <span class="code-line">        }</span>
     <span class="code-line">    }</span>
